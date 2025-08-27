@@ -1,0 +1,10 @@
+{% load static %}
+
+<header>
+    <h2>Меню</h2>
+    <ul>
+        {% for name, label in buttons.items %}
+            <li><a href="#{{ name }}">{{ label }}</a></li>
+        {% endfor %}
+    </ul>
+</header>
