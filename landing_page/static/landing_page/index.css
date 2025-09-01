@@ -1,0 +1,107 @@
+/* Headings use Roboto Bold */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Taglines / Quotes use serif accent font */
+.tagline {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('/static/images/hero-bg.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    max-width: 600px;
+}
+
+.hero .btn {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+}
+
+/* Section Common */
+section {
+    padding: 4rem 2rem;
+}
+
+section h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Blue Background Sections */
+.section-blue {
+    background-color: #1e4d8c;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    margin: 2rem auto;
+    color: #fff;
+    max-width: 900px;
+}
+
+.section-blue p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* Mission Tagline */
+.tagline {
+    margin-top: 2rem;
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+/* About Us Image */
+.about-img {
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: auto;
+}
+
+/* Buttons */
+.btn-custom {
+    background-color: #1e4d8c;
+    color: #fff;
+    border-radius: 25px;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #163963;
+    color: #fff;
+}
