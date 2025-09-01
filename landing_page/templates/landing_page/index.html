@@ -13,7 +13,8 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>ВІТАЄМО У НАШІЙ ЦЕРКВІ!</h1>
+            <h1>ВІТАЄМО</h1>
+            <h1>У НАШІЙ ЦЕРКВІ!</h1>
             <p>Ми раді вітати вас у місці, де любов, віра та надія об'єднують серця.</p>
             <a href="#" class="cta-button">Записатися на консультацію</a>
         </div>
@@ -179,22 +180,6 @@
         </div>
     </section>
 
-    <section class="contact_form">
-        <h2>ЗАЛИШАЙТЕСЬ З НАМИ НА ЗВ'ЯЗКУ</h2>
-        <p>Ми завжди раді вашим питанням та пропозиціям. Пишіть, дзвоніть чи приходьте у гості!</p>
-
-        <form method="post" action="#" class="contact-form">
-            {% csrf_token %}
-            <div class="form-group">
-                <input type="text" name="name" placeholder="Имя" required>
-            </div>
-            <div class="form-group">
-                <input type="email" name="email" placeholder="Електронна почта" required>
-            </div>
-            <button type="submit" class="submit-button">Отправить</button>
-        </form>
-    </section>
-
     <footer class="contacts">
         <h2>Контакты</h2>
         <div class="contact-info">
@@ -222,5 +207,19 @@
         <div class="footer-bottom">
             <p>Copyright © 2025 Developed by <a href="https://t.me/Media_LH">Media_LH</a></p>
         </div>
+
+        <h2>ЗАЛИШАЙТЕСЬ З НАМИ НА ЗВ'ЯЗКУ</h2>
+        <p>Ми завжди раді вашим питанням та пропозиціям. Пишіть, дзвоніть чи приходьте у гості!</p>
+
+        <form method="post" action="#" class="contact-form">
+            {% csrf_token %}
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Имя" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Електронна почта" required>
+            </div>
+            <button type="submit" class="submit-button">Отправить</button>
+        </form>
     </footer>
 {% endblock %}
