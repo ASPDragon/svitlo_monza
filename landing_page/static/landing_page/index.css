@@ -5,6 +5,10 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.5px;
 }
 
+p {
+    align: justify
+}
+
 /* Taglines / Quotes use serif accent font */
 .tagline {
     font-family: 'Merriweather', serif;
@@ -104,4 +108,13 @@ section h2 {
 .btn-custom:hover {
     background-color: #163963;
     color: #fff;
+}
+
+.contacts {
+    background-color: #F5C765;
+}
+
+.mission {
+    font-size: 62px;
+    align-items: center;
 }

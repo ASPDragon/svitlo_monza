@@ -11,7 +11,7 @@
 {% block content %}
     {% include "landing_page/includes/header.html" %}
 
-    <section id="hero">
+    <section class="hero">
         <div class="hero-content">
             <h1>ВІТАЄМО У НАШІЙ ЦЕРКВІ!</h1>
             <p>Ми раді вітати вас у місці, де любов, віра та надія об'єднують серця.</p>
@@ -19,8 +19,8 @@
         </div>
     </section>
 
-    <section id="mission">
-        <header>
+    <section class="section-blue">
+        <header class="mission">
             НАША МІСІЯ
         </header>
         <p>
@@ -34,19 +34,21 @@
         <h2>Find Your Home in Faith!</h2>
     </section>
 
-    <section id="about_us">
+    <section class="about_us">
         <img src="{% static 'images/church_group.jpg' %}" alt="Про нас" />
-        <h2>ПРО НАС</h2>
-        <p>
-            "ХЄЦУ" – це міжнародний апостольський рух харизматичних протестантських церков, що
-            налічує понад 400 церков у США, Європі та США. Рух «ХЄЦУ» має єдину стратегію та мету –
-            утвердити Царство Боже у всіх сферах нашого життя, у тому числі у медіа, культурі, освіті,
-            бізнесі тощо.
-        </p>
-        <a href="#" class="learn-more-button">Дізнатись більше про нас</a>
+        <div class="about_us">
+            <h2>ПРО НАС</h2>
+            <p>
+                "ХЄЦУ" – це міжнародний апостольський рух харизматичних протестантських церков, що
+                налічує понад 400 церков у США, Європі та США. Рух «ХЄЦУ» має єдину стратегію та мету –
+                утвердити Царство Боже у всіх сферах нашого життя, у тому числі у медіа, культурі, освіті,
+                бізнесі тощо.
+            </p>
+            <a href="#" class="learn-more-button">Дізнатись більше про нас</a>
+        </div>
     </section>
 
-    <section id="food_assistance">
+    <section class="food_assistance">
         <div class="food-section-content">
             <h2>ПРОДУКТОВА ДОПОМОГА</h2>
             <p>
@@ -57,7 +59,7 @@
         </div>
     </section>
 
-    <section id="home_groups">
+    <section class="home_groups">
         <h2>ДОМАШНІ ГРУПИ</h2>
         <div class="home-groups">
             <img src="{% static 'images/pastor_svetlana.jpg' %}" alt="Комар Світлана">
@@ -73,12 +75,12 @@
         </div>
     </section>
 
-    <section id="services">
+    <section class="services">
         <h2>СЛУЖІННЯ</h2>
         <!-- Services content would go here -->
     </section>
 
-    <section id="consultation">
+    <section class="consultation">
         <h2>ЗАПИСАТИСЯ НА КОНСУЛЬТАЦІЮ</h2>
         <p>Якщо ви зіткнулись з проблемами алкоголізму, наркоманії чи інших труднощів, ми готові допомогти.</p>
 
@@ -112,7 +114,7 @@
         </form>
     </section>
 
-    <section id="personal_meeting">
+    <section class="personal_meeting">
         <div class="meeting-content">
             <div class="meeting-text">
                 <h2>ОСОБИСТА БЕСІДА З ПАСТОРОМ</h2>
@@ -177,7 +179,7 @@
         </div>
     </section>
 
-    <section id="contact_form">
+    <section class="contact_form">
         <h2>ЗАЛИШАЙТЕСЬ З НАМИ НА ЗВ'ЯЗКУ</h2>
         <p>Ми завжди раді вашим питанням та пропозиціям. Пишіть, дзвоніть чи приходьте у гості!</p>
 
@@ -193,7 +195,7 @@
         </form>
     </section>
 
-    <footer id="contacts">
+    <footer class="contacts">
         <h2>Контакты</h2>
         <div class="contact-info">
             <div class="contact-item">
