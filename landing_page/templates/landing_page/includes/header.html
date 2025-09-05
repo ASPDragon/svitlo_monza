@@ -1,87 +1,100 @@
 {% load static %}
 
 <header class="hdr wow fadeInDown">
-        <div class="container">
-            <div class="row">
-                <div class="col-3 col-sm-2 col-md-1">
-                    <a class="hdr-logo" href="https://svitlo-monza.org/" title="Svitlo Monza">
-                                                <img src="https://svitlo-monza.org/wp-content/uploads/2025/06/cropped-svitlo_logo-mark_2.png" alt="Svitlo Monza" width="75">
-                                            </a>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-sm-2 col-md-1">
+                <a class="hdr-logo" href="https://svitlo-monza.org/" title="Svitlo Monza">
+                    <img src="{% static 'landing_page/images/logo.png' %}"
+                         alt="Svitlo Monza" width="75">
+                </a>
+            </div>
+
+            <div class="col-7 col-xl-4">
+                <div class="hdr-adr hidden-mob">
+                    Via Mentana, 20, 20900 Monza MB
                 </div>
 
-                <div class="col-7 col-xl-4">
-                                        <div class="hdr-adr hidden-mob">
-                        Via Mentana, 20, 20900 Monza MB                    </div>
-
-                                        <div class="hdr-phones">
-                                                <a href="tel:+393295545266" class="hdr-phone" title="+39 329 554 5266">
-                            +39 329 554 5266                        </a>
-                    </div>
-                                    </div>
-
-                <div class="hidden-mob col-lg-8 offset-lg-4 col-xl-7 offset-xl-0">
-                    <ul id="menu-golovne-menyu" class="menu">
-                        {% for name, label in buttons.items %}
-                            <li id="menu-{{ name }}" class="main-menu-item menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom"><a href="#{{ name }}" class="menu-link main-menu-link">{{ label }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-
-                <div class="col-2 col-md-2 visib-mob">
-                    <button class="visib-mob hdr-mobile_btn" title="Menu"></button>
+                <div class="hdr-phones">
+                    <a href="tel:+393295545266" class="hdr-phone" title="+39 329 554 5266">
+                        +39 329 554 5266 </a>
                 </div>
             </div>
+
+            <div class="hidden-mob col-lg-8 offset-lg-4 col-xl-7 offset-xl-0">
+                <ul id="menu-golovne-menyu" class="menu">
+                    {% for name, label in buttons.items %}
+                    <li id="menu-{{ name }}"
+                        class="main-menu-item menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom">
+                        <a href="#{{ name }}" class="menu-link main-menu-link">{{ label }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="col-2 col-md-2 visib-mob">
+                <button class="visib-mob hdr-mobile_btn" title="Menu"></button>
+            </div>
         </div>
+    </div>
 </header>
 
 <div class="mobile-menu">
-        <div class="mobile-menu_wp">
-            <div class="mobile-menu_top">
-                <a class="ftr-logo" href="https://svitlo-monza.org/" title="Svitlo Monza">
-                                        <img src="https://svitlo-monza.org/wp-content/uploads/2025/06/cropped-svitlo_logo-mark_2.png" alt="Svitlo Monza" width="55">
-                                    </a>
+    <div class="mobile-menu_wp">
+        <div class="mobile-menu_top">
+            <a class="ftr-logo" href="https://svitlo-monza.org/" title="Svitlo Monza">
+                <img src="{% static 'landing_page/images/logo.png' %}"
+                     alt="Svitlo Monza" width="55">
+            </a>
 
-                <div class="hdr-phones type2">
-                    <a href="tel:+393295545266" class="hdr-phone" title="+39 329 554 5266">+39 329 554 5266</a>
-                </div>
-
-                <span class="mobile-menu_close"></span>
+            <div class="hdr-phones type2">
+                <a href="tel:+393295545266" class="hdr-phone" title="+39 329 554 5266">+39 329 554 5266</a>
             </div>
 
-                        <div class="ftr-t">
-                Меню            </div>
+            <span class="mobile-menu_close"></span>
+        </div>
 
-            <ul id="menu-golovne-menyu-1" class="menu">
-                {% for name, label in buttons.items %}
-                    <li id="menu-{{ name }}" class="main-menu-item menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom"><a href="#{{ name }}" class="menu-link main-menu-link">{{ label }}</a></li>
-                {% endfor %}
-            </ul>
-                        <div class="ftr-t">
-                Контакты            </div>
-                                    <div class="hdr-phones type2">
-                                <a href="tel:+393295545266" class="hdr-phone" title="+39 329 554 5266">
-                    +39 329 554 5266                </a>
-            </div>
+        <div class="ftr-t">
+            Меню
+        </div>
 
-                        <div class="hdr-adr">Via Mentana, 20, 20900 Monza MB</div>
+        <ul id="menu-golovne-menyu-1" class="menu">
+            {% for name, label in buttons.items %}
+            <li id="mobile-menu-{{ name }}"
+                class="main-menu-item menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="#{{ name }}" class="menu-link main-menu-link">{{ label }}</a></li>
+            {% endfor %}
+        </ul>
+        <div class="ftr-t">
+            Контакты
+        </div>
+        <div class="hdr-phones type2">
+            <a href="tel:+393295545266" class="hdr-phone" title="+39 329 554 5266">
+                +39 329 554 5266 </a>
+        </div>
 
-                        <a href="mailto:komarng01@gmail.com" class="hdr-mail type2">komarng01@gmail.com</a>
+        <div class="hdr-adr">Via Mentana, 20, 20900 Monza MB</div>
 
-
-<div class="soc-list">
-
-
-	    <a href="https://www.youtube.com/@LivingHopeMunich" class="fa-beat-shade ytb" rel="nofollow" title="Youtube" target="_blank"></a>
-
-
-        <a href="https://www.facebook.com/profile.php?id=100007391314318" class="fa-beat-shade fb" rel="nofollow" title="Facebook" target="_blank"></a>
-
-        <a href="https://telegram.me/MYKOLASVITLO" class="fa-beat-shade telegram" rel="nofollow" title="Telegram" target="_blank"></a>
+        <a href="mailto:komarng01@gmail.com" class="hdr-mail type2">komarng01@gmail.com</a>
 
 
-        <a href="https://www.instagram.com/komarng01kolia/" class="fa-beat-shade inst" rel="nofollow" title="Instagram" target="_blank"></a>
+        <div class="soc-list">
+
+
+            <a href="https://www.youtube.com/@LivingHopeMunich" class="fa-beat-shade ytb" rel="nofollow" title="Youtube"
+               target="_blank"></a>
+
+
+            <a href="https://www.facebook.com/profile.php?id=100007391314318" class="fa-beat-shade fb" rel="nofollow"
+               title="Facebook" target="_blank"></a>
+
+            <a href="https://telegram.me/MYKOLASVITLO" class="fa-beat-shade telegram" rel="nofollow" title="Telegram"
+               target="_blank"></a>
+
+
+            <a href="https://www.instagram.com/komarng01kolia/" class="fa-beat-shade inst" rel="nofollow"
+               title="Instagram" target="_blank"></a>
+        </div>
+
     </div>
-
-                    </div>
-        <div class="mobile-menu_left"></div>
+    <div class="mobile-menu_left"></div>
 </div>
