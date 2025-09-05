@@ -67,13 +67,12 @@
                                 Меню                            </div>
 
                             <div id="menus">
-                                <ul id="menu-pidval" class="menu"><li id="nav-menu-item-442" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom"><a href="#about" class="menu-link main-menu-link">Про нас</a></li>
-<li id="nav-menu-item-444" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom"><a href="#events" class="menu-link main-menu-link">Домашні групи</a></li>
-<li id="nav-menu-item-446" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom"><a href="#consultation" class="menu-link main-menu-link">Консультація</a></li>
-<li id="nav-menu-item-447" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom"><a href="#offers" class="menu-link main-menu-link">Служіння</a></li>
-<li id="nav-menu-item-448" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom"><a href="#faq" class="menu-link main-menu-link">FAQ</a></li>
-<li id="nav-menu-item-440" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy"><a href="https://svitlo-monza.org/privacy-policy/" class="menu-link main-menu-link">Політика конфіденційності</a></li>
-</ul>                            </div>
+                                <ul id="menu-golovne-menyu" class="menu">
+                                    {% for name, label in buttons.items %}
+                                        <li id="menu-{{ name }}" class="main-menu-item menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom"><a href="#{{ name }}" class="menu-link main-menu-link">{{ label }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

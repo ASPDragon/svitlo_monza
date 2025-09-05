@@ -2,8 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 navigation_bar = {
-    'about_us' : 'Про нас',
-    'home_groups' : 'Домашнi групи',
+    'about' : 'Про нас',
+    'events' : 'Домашнi групи',
     'consultation' : 'Консультацiя',
     'public_worship' : 'Служiння',
     'faq' : 'FAQ',
