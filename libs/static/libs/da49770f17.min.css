@@ -536,8 +536,8 @@ form.submitting .wpcf7-spinner {
   position: relative;
   z-index: 0;
 }
-.hdr .menu li.current-menu-item > a {
-  color: var(--txt-color4);
+.menu-link {
+  color: #fff;
 }
 .hdr .menu li a {
   font-size: 16px;
@@ -840,9 +840,9 @@ form.submitting .wpcf7-spinner {
 .hero-block2 > .container {
   padding-top: 80px;
   padding-bottom: 105px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   overflow: hidden;
   position: relative;
 }
@@ -991,9 +991,9 @@ form.submitting .wpcf7-spinner {
   height: 100%;
   min-height: 350px;
   overflow: hidden;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 .about-block_img img {
   object-fit: cover;
@@ -1045,9 +1045,9 @@ form.submitting .wpcf7-spinner {
   width: 47%;
   height: 280px;
   overflow: hidden;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 .events-block_img img {
   object-fit: cover;
@@ -1063,7 +1063,7 @@ form.submitting .wpcf7-spinner {
 .events-block_time {
   font-size: 16px;
   line-height: 20px;
-  color: var(--txt-color3);
+  color: var(--txt-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1082,7 +1082,7 @@ form.submitting .wpcf7-spinner {
 .events-block_place {
   font-size: 16px;
   line-height: 23px;
-  color: var(--txt-color3);
+  color: var(--txt-color);
   padding-left: 30px;
   background: url('/static/landing_page/images/place-ic.svg')
     left no-repeat;
@@ -1405,9 +1405,9 @@ form.submitting .wpcf7-spinner {
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   height: 390px;
   display: block;
   overflow: hidden;
@@ -1498,9 +1498,9 @@ form.submitting .wpcf7-spinner {
   justify-content: space-between;
   position: relative;
   overflow: hidden;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   height: 380px;
 }
 .offers-block_item:before {
@@ -1755,7 +1755,7 @@ form.submitting .wpcf7-spinner {
 .ftr-form_txt {
   font-size: 18px;
   line-height: 27px;
-  color: var(--txt-color3);
+  color: var(--txt-color);
 }
 .ftr .menu .sub-menu {
   display: none;

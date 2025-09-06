@@ -1,15 +1,16 @@
 {% load static %}
 
-<div>
-    <header class="position-absolute w-100 d-flex flex-wrap justify-content-center py-3 mb-4 align-items-center" style="z-index: 10; --bs-bg-opacity: .5; background: rgba(0, 0, 0, 0.5);">
-        <div class="col-3 col-sm-2 col-md-1">
+<header class="hdr wow fadeInDown">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-sm-2 col-md-1">
                 <a class="hdr-logo" href="https://svitlo-monza.org/" title="Svitlo Monza">
                     <img src="{% static 'landing_page/images/logo.png' %}"
                          alt="Svitlo Monza" width="75">
                 </a>
-        </div>
+            </div>
 
-        <div class="col-7 col-xl-4">
+            <div class="col-7 col-xl-4">
                 <div class="hdr-adr hidden-mob">
                     Via Mentana, 20, 20900 Monza MB
                 </div>
@@ -18,21 +19,24 @@
                     <a href="tel:+393295545266" class="hdr-phone" title="+39 329 554 5266">
                         +39 329 554 5266 </a>
                 </div>
-        </div>
+            </div>
 
-        <ul id="menu-golovne-menyu" class="nav nav-pills d-flex hidden-mob" style="gap: 20px;">
-            {% for name, label in buttons.items %}
-            <li class="nav-item" id="menu-{{ name }}">
-                <a href="{{ name }}" class="menu-link main-menu-link">{{ label }}</a>
-            </li>
-            {% endfor %}
-        </ul>
+            <div class="hidden-mob col-lg-8 offset-lg-4 col-xl-7 offset-xl-0">
+                <ul id="menu-golovne-menyu" class="menu">
+                    {% for name, label in buttons.items %}
+                    <li id="menu-{{ name }}"
+                        class="main-menu-item menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom">
+                        <a href="#{{ name }}" class="menu-link main-menu-link">{{ label }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
 
-        <div class="col-2 col-md-2 visib-mob">
-            <button class="visib-mob hdr-mobile_btn" title="Menu"></button>
+            <div class="col-2 col-md-2 visib-mob">
+                <button class="visib-mob hdr-mobile_btn" title="Menu"></button>
+            </div>
         </div>
-    </header>
-</div>
+    </div>
+</header>
 
 <div class="mobile-menu">
     <div class="mobile-menu_wp">
@@ -57,7 +61,7 @@
             {% for name, label in buttons.items %}
             <li id="mobile-menu-{{ name }}"
                 class="main-menu-item menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom">
-                <a href="{{ name }}" class="menu-link main-menu-link">{{ label }}</a></li>
+                <a href="#{{ name }}" class="menu-link main-menu-link">{{ label }}</a></li>
             {% endfor %}
         </ul>
         <div class="ftr-t">

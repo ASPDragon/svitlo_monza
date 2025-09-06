@@ -2,12 +2,12 @@ from django.shortcuts import render
 
 # Create your views here.
 navigation_bar = {
-    'about' : 'Про нас',
-    'events' : 'Домашнi групи',
-    'consultation' : 'Консультацiя',
-    'public_worship' : 'Служiння',
-    'faq' : 'FAQ',
-    'privacy_policy' : 'Полiтика Конфiденцiйностi'
+    '#events' : 'Домашнi групи',
+    '#consultation' : 'Консультацiя',
+    '#public_worship' : 'Служiння',
+    '#faq' : 'FAQ',
+    'privacy_policy' : 'Полiтика Конфiденцiйностi',
+    '#about' : 'Про нас',
 }
 
 def index(request):
