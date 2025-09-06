@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+from consultation.forms import ConsultationForm
+
 # Create your views here.
 navigation_bar = {
     '#events' : 'Домашнi групи',
@@ -11,4 +13,5 @@ navigation_bar = {
 }
 
 def index(request):
-    return render(request, "landing_page/index.html", {"buttons": navigation_bar})
+    form = ConsultationForm()
+    return render(request, "landing_page/index.html", {"form" : form, "buttons": navigation_bar})

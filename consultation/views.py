@@ -1,5 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.views.decorators.http import require_POST
 
-# Create your views here.
+from consultation.forms import ConsultationForm
+
+
+@require_POST
 def consultation(request):
-    pass
+    form = ConsultationForm(request.POST)
+    if form.is_valid():
+        form.save()
+        return redirect("index")
+    return None
