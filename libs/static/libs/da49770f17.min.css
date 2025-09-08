@@ -814,9 +814,9 @@ form.submitting .wpcf7-spinner {
 }
 @media (max-width: 991px) {
   .hero-block {
-    -webkit-border-radius: 0 0 20px 20px;
-    -moz-border-radius: 0 0 20px 20px;
-    border-radius: 0 0 20px 20px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
     height: 89vh;
   }
   .hero-block_t {
@@ -899,9 +899,9 @@ form.submitting .wpcf7-spinner {
 @media (max-width: 991px) {
   .hero-block2 {
     padding: 45px 0;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
   }
   .hero-block2 > .container {
     padding-top: 95px;
@@ -957,9 +957,9 @@ form.submitting .wpcf7-spinner {
 }
 @media (max-width: 991px) {
   .mission-block {
-    -webkit-border-radius: 0 0 20px 20px;
-    -moz-border-radius: 0 0 20px 20px;
-    border-radius: 0 0 20px 20px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
     padding: 65px 0 30px;
   }
   .mission-block_txt {
@@ -1074,9 +1074,9 @@ form.submitting .wpcf7-spinner {
   color: var(--txt-color);
   padding: 10px 20px;
   background: var(--main-color);
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   display: inline-block;
 }
 .events-block_place {
@@ -1253,9 +1253,9 @@ form.submitting .wpcf7-spinner {
   }
   .form-section .container {
     padding: 15px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
   }
   .form-section_inner {
     margin: 15px 0;
@@ -1827,9 +1827,9 @@ form.submitting .wpcf7-spinner {
 @media (max-width: 991px) {
   .ftr {
     margin: -15px 0 0;
-    -webkit-border-radius: 20px 20px 0 0;
-    -moz-border-radius: 20px 20px 0 0;
-    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
   }
   .ftr li {
     margin: 0 0 10px;

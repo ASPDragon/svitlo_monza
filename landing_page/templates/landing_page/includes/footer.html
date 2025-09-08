@@ -30,8 +30,6 @@
 
 
                             <div class="soc-list">
-
-
                                 <a href="https://www.youtube.com/@LivingHopeMunich" class="fa-beat-shade ytb"
                                    rel="nofollow" title="Youtube" target="_blank"></a>
 
@@ -61,38 +59,12 @@
                                                                        aria-atomic="true"></p>
                                     <ul></ul>
                                 </div>
-                                <form action="/#wpcf7-f144-o2" method="post" class="wpcf7-form init"
+                                <form action="{% url 'contact_us' %}" method="post" class="wpcf7-form init"
                                       aria-label="Контактная форма" novalidate="novalidate" data-status="init">
-                                    <fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7"
-                                                                                     value="144"/><input type="hidden"
-                                                                                                         name="_wpcf7_version"
-                                                                                                         value="6.1.1"/><input
-                                            type="hidden" name="_wpcf7_locale" value="ru_RU"/><input type="hidden"
-                                                                                                     name="_wpcf7_unit_tag"
-                                                                                                     value="wpcf7-f144-o2"/><input
-                                            type="hidden" name="_wpcf7_container_post" value="0"/><input type="hidden"
-                                                                                                         name="_wpcf7_posted_data_hash"
-                                                                                                         value=""/>
-                                    </fieldset>
-                                    <p><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40"
-                                                                                                          maxlength="400"
-                                                                                                          class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                                                                          autocomplete="name"
-                                                                                                          aria-required="true"
-                                                                                                          aria-invalid="false"
-                                                                                                          placeholder="Имя"
-                                                                                                          value=""
-                                                                                                          type="text"
-                                                                                                          name="your-name"/></span><br/>
-                                        <span class="wpcf7-form-control-wrap" data-name="email-169"><input size="40"
-                                                                                                           maxlength="400"
-                                                                                                           class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email"
-                                                                                                           autocomplete="email"
-                                                                                                           aria-invalid="false"
-                                                                                                           placeholder="Электронная почта"
-                                                                                                           value=""
-                                                                                                           type="email"
-                                                                                                           name="email-169"/></span><br/>
+                                    {% csrf_token %}
+                                    <p>
+                                        <span class="wpcf7-form-control-wrap" data-name="your-name">{{ contact_us_form.name }}</span><br/>
+                                        <span class="wpcf7-form-control-wrap" data-name="email-169">{{ contact_us_form.email }}</span><br/>
                                         <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit"
                                                value="Отправить"/>
                                     </p>
@@ -131,36 +103,12 @@
                         <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p>
                             <ul></ul>
                         </div>
-                        <form action="/#wpcf7-f144-o3" method="post" class="wpcf7-form init"
+                        <form action="{% url 'contact_us' %}" method="post" class="wpcf7-form init"
                               aria-label="Контактная форма" novalidate="novalidate" data-status="init">
-                            <fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7"
-                                                                             value="144"/><input type="hidden"
-                                                                                                 name="_wpcf7_version"
-                                                                                                 value="6.1.1"/><input
-                                    type="hidden" name="_wpcf7_locale" value="ru_RU"/><input type="hidden"
-                                                                                             name="_wpcf7_unit_tag"
-                                                                                             value="wpcf7-f144-o3"/><input
-                                    type="hidden" name="_wpcf7_container_post" value="0"/><input type="hidden"
-                                                                                                 name="_wpcf7_posted_data_hash"
-                                                                                                 value=""/>
-                            </fieldset>
-                            <p><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40"
-                                                                                                  maxlength="400"
-                                                                                                  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                                                                  autocomplete="name"
-                                                                                                  aria-required="true"
-                                                                                                  aria-invalid="false"
-                                                                                                  placeholder="Имя"
-                                                                                                  value="" type="text"
-                                                                                                  name="your-name"/></span><br/>
-                                <span class="wpcf7-form-control-wrap" data-name="email-169"><input size="40"
-                                                                                                   maxlength="400"
-                                                                                                   class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email"
-                                                                                                   autocomplete="email"
-                                                                                                   aria-invalid="false"
-                                                                                                   placeholder="Электронная почта"
-                                                                                                   value="" type="email"
-                                                                                                   name="email-169"/></span><br/>
+                            {% csrf_token %}
+                            <p>
+                                <span class="wpcf7-form-control-wrap" data-name="your-name">{{ contact_us_form.name }}</span><br/>
+                                <span class="wpcf7-form-control-wrap" data-name="email-169">{{ contact_us_form.email }}</span><br/>
                                 <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit"
                                        value="Отправить"/>
                             </p>
@@ -168,9 +116,7 @@
                         </form>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 

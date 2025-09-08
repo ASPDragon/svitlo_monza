@@ -4,9 +4,6 @@
 {% block title %}Головна - Svitlo Monza{% endblock %}
 
 {% block content %}
-<body class="home wp-singular page-template page-template-page-home page-template-page-home-php page page-id-2 wp-theme-newchurchtheme">
-
-
 <main class="page-home main-block">
     <div class="hero-block wow fadeIn"
          style="background:url({% static 'landing_page/images/hero-bg.jpg' %}) center no-repeat;">
@@ -314,9 +311,9 @@
                                   aria-label="Контактная форма" novalidate="novalidate" data-status="init">
                                 {% csrf_token %}
                                 <p>
-                                    <span class="wpcf7-form-control-wrap" data-name="your-name">{{ form.name }}</span><br/>
-                                    <span class="wpcf7-form-control-wrap" data-name="your-tel">{{ form.phone }}</span><br/>
-                                    <span class="wpcf7-form-control-wrap" data-name="your-message">{{ form.message }}</span><br/>
+                                    <span class="wpcf7-form-control-wrap" data-name="your-name">{{ consultation_form.name }}</span><br/>
+                                    <span class="wpcf7-form-control-wrap" data-name="your-tel">{{ consultation_form.phone }}</span><br/>
+                                    <span class="wpcf7-form-control-wrap" data-name="your-message">{{ consultation_form.message }}</span><br/>
                                     <input class="wpcf7-form-control wpcf7-submit has-spinner type2" type="submit"
                                            value="Отправить"/>
                                 </p>
@@ -609,32 +606,11 @@
                     <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p>
                         <ul></ul>
                     </div>
-                    <form action="/#wpcf7-f145-o4" method="post" class="wpcf7-form init" aria-label="Контактная форма"
+                    <form action="{% url 'consultation' %}" method="post" class="wpcf7-form init" aria-label="Контактная форма"
                           novalidate="novalidate" data-status="init">
-                        <fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="145"/><input
-                                type="hidden" name="_wpcf7_version" value="6.1.1"/><input type="hidden"
-                                                                                          name="_wpcf7_locale"
-                                                                                          value="ru_RU"/><input
-                                type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f145-o4"/><input type="hidden"
-                                                                                                   name="_wpcf7_container_post"
-                                                                                                   value="0"/><input
-                                type="hidden" name="_wpcf7_posted_data_hash" value=""/>
-                        </fieldset>
-                        <p><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" maxlength="400"
-                                                                                              class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                                                              autocomplete="name"
-                                                                                              aria-required="true"
-                                                                                              aria-invalid="false"
-                                                                                              placeholder="Имя" value=""
-                                                                                              type="text"
-                                                                                              name="your-name"/></span><br/>
-                            <span class="wpcf7-form-control-wrap" data-name="your-tel"><input size="40" maxlength="400"
-                                                                                              class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
-                                                                                              aria-required="true"
-                                                                                              aria-invalid="false"
-                                                                                              placeholder="Телефон"
-                                                                                              value="" type="tel"
-                                                                                              name="your-tel"/></span><br/>
+                        {% csrf_token %}
+                        <p><span class="wpcf7-form-control-wrap" data-name="your-name">{{ consultation_form.name }}</span><br/>
+                            <span class="wpcf7-form-control-wrap" data-name="your-tel">{{ consultation_form.phone }}</span><br/>
                             <input class="wpcf7-form-control wpcf7-submit has-spinner type2" type="submit"
                                    value="Отправить"/>
                         </p>
@@ -667,32 +643,11 @@
                     <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p>
                         <ul></ul>
                     </div>
-                    <form action="/#wpcf7-f145-o5" method="post" class="wpcf7-form init" aria-label="Контактная форма"
+                    <form action="{% url 'consultation' %}" method="post" class="wpcf7-form init" aria-label="Контактная форма"
                           novalidate="novalidate" data-status="init">
-                        <fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="145"/><input
-                                type="hidden" name="_wpcf7_version" value="6.1.1"/><input type="hidden"
-                                                                                          name="_wpcf7_locale"
-                                                                                          value="ru_RU"/><input
-                                type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f145-o5"/><input type="hidden"
-                                                                                                   name="_wpcf7_container_post"
-                                                                                                   value="0"/><input
-                                type="hidden" name="_wpcf7_posted_data_hash" value=""/>
-                        </fieldset>
-                        <p><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" maxlength="400"
-                                                                                              class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                                                              autocomplete="name"
-                                                                                              aria-required="true"
-                                                                                              aria-invalid="false"
-                                                                                              placeholder="Имя" value=""
-                                                                                              type="text"
-                                                                                              name="your-name"/></span><br/>
-                            <span class="wpcf7-form-control-wrap" data-name="your-tel"><input size="40" maxlength="400"
-                                                                                              class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
-                                                                                              aria-required="true"
-                                                                                              aria-invalid="false"
-                                                                                              placeholder="Телефон"
-                                                                                              value="" type="tel"
-                                                                                              name="your-tel"/></span><br/>
+                        {% csrf_token %}
+                        <p><span class="wpcf7-form-control-wrap" data-name="your-name">{{ consultation_form.name }}</span><br/>
+                            <span class="wpcf7-form-control-wrap" data-name="your-tel">{{ consultation_form.phone }}</span><br/>
                             <input class="wpcf7-form-control wpcf7-submit has-spinner type2" type="submit"
                                    value="Отправить"/>
                         </p>
@@ -729,32 +684,11 @@
                     <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p>
                         <ul></ul>
                     </div>
-                    <form action="/#wpcf7-f145-o6" method="post" class="wpcf7-form init" aria-label="Контактная форма"
+                    <form action="{% url 'consultation' %}" method="post" class="wpcf7-form init" aria-label="Контактная форма"
                           novalidate="novalidate" data-status="init">
-                        <fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="145"/><input
-                                type="hidden" name="_wpcf7_version" value="6.1.1"/><input type="hidden"
-                                                                                          name="_wpcf7_locale"
-                                                                                          value="ru_RU"/><input
-                                type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f145-o6"/><input type="hidden"
-                                                                                                   name="_wpcf7_container_post"
-                                                                                                   value="0"/><input
-                                type="hidden" name="_wpcf7_posted_data_hash" value=""/>
-                        </fieldset>
-                        <p><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" maxlength="400"
-                                                                                              class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                                                              autocomplete="name"
-                                                                                              aria-required="true"
-                                                                                              aria-invalid="false"
-                                                                                              placeholder="Имя" value=""
-                                                                                              type="text"
-                                                                                              name="your-name"/></span><br/>
-                            <span class="wpcf7-form-control-wrap" data-name="your-tel"><input size="40" maxlength="400"
-                                                                                              class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
-                                                                                              aria-required="true"
-                                                                                              aria-invalid="false"
-                                                                                              placeholder="Телефон"
-                                                                                              value="" type="tel"
-                                                                                              name="your-tel"/></span><br/>
+                        {% csrf_token %}
+                        <p><span class="wpcf7-form-control-wrap" data-name="your-name">{{ consultation_form.name }}</span><br/>
+                            <span class="wpcf7-form-control-wrap" data-name="your-tel">{{ consultation_form.phone }}</span><br/>
                             <input class="wpcf7-form-control wpcf7-submit has-spinner type2" type="submit"
                                    value="Отправить"/>
                         </p>
@@ -765,11 +699,4 @@
         </div>
     </div>
 </div>
-
-
-<script src="https://svitlo-monza.org/wp-content/themes/newchurchtheme/js/jquery.min.js" id="jquery-js"></script>
-<script src='https://svitlo-monza.org/wp-includes/js/dist/hooks.min.js?m=1749991188'></script>
-<script src="https://svitlo-monza.org/wp-includes/js/dist/i18n.min.js" id="wp-i18n-js"></script>
-<script src='https://svitlo-monza.org/wp-content/boost-cache/static/1a5eac8f3d.min.js'></script>
-</body>
 {% endblock %}

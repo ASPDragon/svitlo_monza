@@ -10,4 +10,13 @@ def consultation(request):
     if form.is_valid():
         form.save()
         return redirect("index")
+    return (None
+
+
+@require_POST)
+def consultation_no_message(request):
+    form = ConsultationForm(request.POST)
+    if form.is_valid():
+        form.save()
+        return redirect("index")
     return None

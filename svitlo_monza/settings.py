@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'gallery',
     'libs',
     'consultation',
+    'contact_us',
 ]
 
 MIDDLEWARE = [
