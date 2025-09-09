@@ -340,47 +340,15 @@
 
             <div class="swiper swiperGallery hidden-mob">
                 <div class="swiper-wrapper">
-
+                    {% for gallery in galleries %}
                     <div class="swiper-slide">
-
-                        <a href="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-34-27.jpg"
-                           class="wow flipInY gallery-block_img" data-fancybox="gallery">
-                            <img width="1024" height="768"
-                                 src="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-34-27-1024x768.jpg"
-                                 class="attachment-large size-large" alt="" decoding="async"
-                                 srcset="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-34-27-1024x768.jpg 1024w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-34-27-300x225.jpg 300w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-34-27-768x576.jpg 768w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-34-27.jpg 1280w"
-                                 sizes="(max-width: 1024px) 100vw, 1024px"/> </a>
-
-
-                        <a href="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-07.jpg"
-                           class="wow flipInY gallery-block_img" data-fancybox="gallery">
-                            <img width="768" height="1024"
-                                 src="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-07-768x1024.jpg"
-                                 class="attachment-large size-large" alt="" decoding="async"
-                                 srcset="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-07-768x1024.jpg 768w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-07-225x300.jpg 225w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-07.jpg 960w"
-                                 sizes="(max-width: 768px) 100vw, 768px"/> </a>
-
-
-                        <a href="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-33.jpg"
-                           class="wow flipInY gallery-block_img" data-fancybox="gallery">
-                            <img width="768" height="1024"
-                                 src="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-33-768x1024.jpg"
-                                 class="attachment-large size-large" alt="" decoding="async"
-                                 srcset="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-33-768x1024.jpg 768w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-33-225x300.jpg 225w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-33.jpg 960w"
-                                 sizes="(max-width: 768px) 100vw, 768px"/> </a>
-
-
-                        <a href="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-53.jpg"
-                           class="wow flipInY gallery-block_img" data-fancybox="gallery">
-                            <img width="1024" height="768"
-                                 src="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-53-1024x768.jpg"
-                                 class="attachment-large size-large" alt="" decoding="async"
-                                 srcset="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-53-1024x768.jpg 1024w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-53-300x225.jpg 300w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-53-768x576.jpg 768w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-53.jpg 1280w"
-                                 sizes="(max-width: 1024px) 100vw, 1024px"/> </a>
-
-
+                        {% for photo in gallery.public %}
+                        <a href="{{ photo.image.url }}" class="wow flipInY gallery-block_img" data-fancybox="gallery">
+                            <img src="{{ photo.get_display_url }}" alt="{{ photo.title }}">
+                        </a>
+                        {% endfor %}
                     </div>
-
+                    {% endfor %}
                 </div>
 
                 <div class="visib-mob wow fadeInUp"></div>
@@ -393,44 +361,18 @@
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
-
-                        <a href="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-34-27.jpg"
-                           class="wow flipInY gallery-block_img" data-fancybox="gallery">
-                            <img width="1024" height="768"
-                                 src="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-34-27-1024x768.jpg"
-                                 class="attachment-large size-large" alt="" decoding="async"
-                                 srcset="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-34-27-1024x768.jpg 1024w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-34-27-300x225.jpg 300w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-34-27-768x576.jpg 768w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-34-27.jpg 1280w"
-                                 sizes="(max-width: 1024px) 100vw, 1024px"/> </a>
-
-
-                        <a href="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-07.jpg"
-                           class="wow flipInY gallery-block_img" data-fancybox="gallery">
-                            <img width="768" height="1024"
-                                 src="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-07-768x1024.jpg"
-                                 class="attachment-large size-large" alt="" decoding="async"
-                                 srcset="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-07-768x1024.jpg 768w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-07-225x300.jpg 225w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-07.jpg 960w"
-                                 sizes="(max-width: 768px) 100vw, 768px"/> </a>
-
-
-                        <a href="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-33.jpg"
-                           class="wow flipInY gallery-block_img" data-fancybox="gallery">
-                            <img width="768" height="1024"
-                                 src="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-33-768x1024.jpg"
-                                 class="attachment-large size-large" alt="" decoding="async"
-                                 srcset="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-33-768x1024.jpg 768w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-33-225x300.jpg 225w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-33.jpg 960w"
-                                 sizes="(max-width: 768px) 100vw, 768px"/> </a>
-
+                        <a href="{{ photo.image.url }}">
+                            <img src="{{ photo.get_display_url }}" alt="{{ photo.title }}">
+                        </a>
                     </div>
                     <div class="swiper-slide">
-
-
-                        <a href="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-53.jpg"
-                           class="wow flipInY gallery-block_img" data-fancybox="gallery">
-                            <img width="1024" height="768"
-                                 src="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-53-1024x768.jpg"
-                                 class="attachment-large size-large" alt="" decoding="async"
-                                 srcset="https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-53-1024x768.jpg 1024w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-53-300x225.jpg 300w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-53-768x576.jpg 768w, https://svitlo-monza.org/wp-content/uploads/2025/06/photo_2025-06-17_12-35-53.jpg 1280w"
-                                 sizes="(max-width: 1024px) 100vw, 1024px"/> </a>
+                        {% for gallery in galleries %}
+                        {% for photo in gallery.public %}
+                        <a href="{{ photo.image.url }}" class="wow flipInY gallery-block_img">
+                            <img src="{{ photo.get_display_url }}" alt="{{ photo.title }}">
+                        </a>
+                        {% endfor %}
+                        {% endfor %}
 
 
                     </div>
@@ -606,11 +548,14 @@
                     <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p>
                         <ul></ul>
                     </div>
-                    <form action="{% url 'consultation' %}" method="post" class="wpcf7-form init" aria-label="Контактная форма"
+                    <form action="{% url 'consultation' %}" method="post" class="wpcf7-form init"
+                          aria-label="Контактная форма"
                           novalidate="novalidate" data-status="init">
                         {% csrf_token %}
-                        <p><span class="wpcf7-form-control-wrap" data-name="your-name">{{ consultation_form.name }}</span><br/>
-                            <span class="wpcf7-form-control-wrap" data-name="your-tel">{{ consultation_form.phone }}</span><br/>
+                        <p><span class="wpcf7-form-control-wrap"
+                                 data-name="your-name">{{ consultation_form.name }}</span><br/>
+                            <span class="wpcf7-form-control-wrap"
+                                  data-name="your-tel">{{ consultation_form.phone }}</span><br/>
                             <input class="wpcf7-form-control wpcf7-submit has-spinner type2" type="submit"
                                    value="Отправить"/>
                         </p>
@@ -643,11 +588,14 @@
                     <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p>
                         <ul></ul>
                     </div>
-                    <form action="{% url 'consultation' %}" method="post" class="wpcf7-form init" aria-label="Контактная форма"
+                    <form action="{% url 'consultation' %}" method="post" class="wpcf7-form init"
+                          aria-label="Контактная форма"
                           novalidate="novalidate" data-status="init">
                         {% csrf_token %}
-                        <p><span class="wpcf7-form-control-wrap" data-name="your-name">{{ consultation_form.name }}</span><br/>
-                            <span class="wpcf7-form-control-wrap" data-name="your-tel">{{ consultation_form.phone }}</span><br/>
+                        <p><span class="wpcf7-form-control-wrap"
+                                 data-name="your-name">{{ consultation_form.name }}</span><br/>
+                            <span class="wpcf7-form-control-wrap"
+                                  data-name="your-tel">{{ consultation_form.phone }}</span><br/>
                             <input class="wpcf7-form-control wpcf7-submit has-spinner type2" type="submit"
                                    value="Отправить"/>
                         </p>
@@ -684,11 +632,14 @@
                     <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p>
                         <ul></ul>
                     </div>
-                    <form action="{% url 'consultation' %}" method="post" class="wpcf7-form init" aria-label="Контактная форма"
+                    <form action="{% url 'consultation' %}" method="post" class="wpcf7-form init"
+                          aria-label="Контактная форма"
                           novalidate="novalidate" data-status="init">
                         {% csrf_token %}
-                        <p><span class="wpcf7-form-control-wrap" data-name="your-name">{{ consultation_form.name }}</span><br/>
-                            <span class="wpcf7-form-control-wrap" data-name="your-tel">{{ consultation_form.phone }}</span><br/>
+                        <p><span class="wpcf7-form-control-wrap"
+                                 data-name="your-name">{{ consultation_form.name }}</span><br/>
+                            <span class="wpcf7-form-control-wrap"
+                                  data-name="your-tel">{{ consultation_form.phone }}</span><br/>
                             <input class="wpcf7-form-control wpcf7-submit has-spinner type2" type="submit"
                                    value="Отправить"/>
                         </p>
